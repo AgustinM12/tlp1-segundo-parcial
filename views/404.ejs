@@ -1,0 +1,18 @@
+<%- include('partials/header', {titulo: '404'})  %>
+ 
+<body>
+ <h1>404-PAGINA NO ENCONTRADA</h1>
+<h2>Redirigiendo a la pagina de inicio...</h2>
+    <script>
+        setTimeout(() => {
+            window.location.href = 'http://localhost:45635/index';
+        }, 3000);
+    </script>
+
+<%- include('partials/header')  %>
+
+
+
+
+
+

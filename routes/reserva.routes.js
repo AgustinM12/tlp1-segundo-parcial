@@ -18,18 +18,23 @@ const controller = require('../controllers/reserva.controllers');
 // ==========================================
 
 // Obtener todas las reservas
-router.get('/api/index', (req, res) =>{
+
+router.get('/index', (req, res) => {
     res.render('index');
 });
- 
+
+router.get('/reserva/crear', (req, res) => {
+    res.render('crearReserva');
+});
+
 // Crear una reserva
-router.post('/api/',);
- 
+router.post('/reserva/crear',);
+
 // Actualizar una reserva
 router.put('/api/:id',);
- 
+
 // Eliminar una reserva de forma lógica
 router.delete('/api/:id',);
 
- 
- module.exports = router;
+
+module.exports = router;

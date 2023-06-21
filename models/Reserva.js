@@ -3,15 +3,15 @@
 const { sequelize, DataTypes } = require('../db');
 
 const reserva = sequelize.define('reserva', {
-    cliente: {
-        type: DataTypes.STRING,
-        allowNull: false
-    },
     id_reserva: {
         type: DataTypes.STRING,
         allowNull: false
     },
-    fechaDeReserva: {
+    user_name: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    date: {
         type: DataTypes.BOOLEAN,
         defaultValue: true
     },
